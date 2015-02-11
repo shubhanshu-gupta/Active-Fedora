@@ -1,5 +1,5 @@
 class DublinCoreAsset
-  include ActiveFedora::RdfObject 
+  include ActiveFedora::RDFObject 
   map_predicates do |map|
     map.title(in: RDF::DC)
     map.creator(in: RDF::DC)

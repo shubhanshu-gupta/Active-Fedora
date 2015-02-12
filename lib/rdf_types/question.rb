@@ -5,5 +5,6 @@ class Question < ActiveFedora::Rdf::Resource
   configure type: QuestionsVocab.Question
   property :title, predicate: RDF::DC.title
   property :description, predicate: RDF::DC.description
-  property :answers, predicate: QuestionsVocab.hasAnswer
+  property :answers, predicate: QuestionsVocab.hasAnswer, class_name: "Answer"
+
 end

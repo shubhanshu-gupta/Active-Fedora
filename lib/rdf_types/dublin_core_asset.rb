@@ -10,7 +10,10 @@
  # end
 #end
 
+require "active-fedora"
+
 class DublinCoreAsset < ActiveFedora::Rdf::Resource 
+configure type: RDF::URI('http://www.mydomain.mn/metadata/ontologies/foo#SpecialAsset'), base_uri: 'info:fedora'	
   property :title, predicate: RDF::DC.title
   property :creator, predicate: RDF::DC.creator
   property :contributor, predicate: RDF::DC.contributor

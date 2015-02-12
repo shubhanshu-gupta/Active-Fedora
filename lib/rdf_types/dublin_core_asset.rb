@@ -20,4 +20,8 @@ configure type: RDF::URI('http://www.mydomain.mn/metadata/ontologies/foo#Special
   property :date, predicate: RDF::DC.date
   property :subject, predicate: RDF::DC.subject
   property :relation, predicate: RDF::DC.relation
+  property :height, predicate: ImageVocabulary.height
+  property :width, predicate: ImageVocabulary.width
+  property :color_depth, predicate: ImageVocabulary.color_depth
+
 end

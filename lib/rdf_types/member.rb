@@ -6,4 +6,5 @@ class Member < ActiveFedora::Rdf::Resource
   property :givenName, predicate: RDF::FOAF.givenName
   property :familyName, predicate: RDF::FOAF.familyName
   property :questions, predicate: QuestionsVocab.askedQuestion, class_name: "Question"
+  accepts_nested_attributes_for :questions
 end
